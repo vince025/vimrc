@@ -17,6 +17,9 @@ colorscheme desert
 "按F9开关自动缩进
 set pastetoggle=<F9>
 
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+
 if &term=="xterm"
 set t_Co=8
 set t_Sb=^[[4%dm
