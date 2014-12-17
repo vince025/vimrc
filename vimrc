@@ -19,6 +19,7 @@ set pastetoggle=<F9>
 
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
+set tags+=~/.vim/nrf51822.tags
 
 if &term=="xterm"
 set t_Co=8
