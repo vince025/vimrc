@@ -53,6 +53,7 @@ if has("autocmd")
 	""NERDTree配置
 	autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 endif
+set tags+=~/.vim/*.tags
 
 if &term=="xterm"
 set t_Co=8
