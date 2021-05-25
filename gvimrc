@@ -19,6 +19,11 @@ catch
 endtry
 "lang mes en_US
 
+"插入文件头信息
+map :mit :0r ~/.vim/mit.txt
+"插入函数说明
+map :fh :r ~/.vim/fh.txt
+
 "windows
 if has("gui_running")
 " && has("win32")
