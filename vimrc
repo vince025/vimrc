@@ -90,3 +90,7 @@ set pastetoggle=<F9>
 "map <F5> :set nu!<CR>
 "新建空文件映射
 "nmap <C-n> :tabnew<CR>
+"插入文件头信息
+map :mit :0r ~/.vim/mit.txt
+"插入函数说明
+map :fh :r ~/.vim/fh.txt
