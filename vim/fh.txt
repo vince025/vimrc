@@ -1,12 +1,5 @@
 /**
- * @brief  :  Configure pins as 
-			* Analog 
-			* Input 
-			* Output
-			* EVENT_OUT
-			* EXTI
-			* Free pins are configured automatically as Analog (this feature is enabled through 
-			* the Code Generation settings)
+ * @brief  : 
  * @input  : 
  * @return : 
  * @date   : 
