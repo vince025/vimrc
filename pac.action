@@ -1,0 +1,26 @@
+{{alias}}
+direct      = +forward-override{forward .}
+socks5      = +forward-override{forward-socks5 127.0.0.1:1080 .}
+http_proxy  = +forward-override{forward 127.0.0.1:8000} 
+default     = socks5
+
+#==========默认代理==========
+{default}
+/
+
+#==========直接连接==========
+{direct} 
+.feishu.cn
+.baidu.com
+.dorabot.com
+.bytegoofy.com
+.snssdk.com
+.zjurl.cn
+.feishucdn.com
+
+#==========SSH代理==========
+{socks5}
+.google.com
+
+#==========GAE代理==========
+#{http_proxy}
