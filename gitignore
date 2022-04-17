@@ -7,4 +7,6 @@
 moc_*
 tags
 .netrwhist
-.tags
+*.tags
+_build/*
+build/*
