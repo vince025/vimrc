@@ -32,11 +32,11 @@ set showmode
 set foldmethod=syntax
 set foldlevel=99
 "显示匹配模的字符串
-"set showmatch
+set showmatch
 " 搜索模式里忽略大小写
-"set ignorecase
+set ignorecase
 "如果搜索模式包含大写字符，不使用 'ignorecase' 选项。只有在输入搜索模式并且打开 'ignorecase' 选项时才会使用。
-"set smartcase
+set smartcase
 " 自动把内容写回文件: 如果文件被修改过，在每个 :next、:rewind、:last、:first、:previous、:stop、:suspend、:tag、:!、:make、CTRL-] 和 CTRL-^命令时进行；用 :buffer、CTRL-O、CTRL-I、'{A-Z0-9} 或 `{A-Z0-9} 命令转到别的文件时亦然。
 "set autowrite
 
@@ -53,7 +53,11 @@ if has("autocmd")
 	""NERDTree配置
 	autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 endif
-set tags+=~/.vim/*.tags
+set tags+=~/.vim/esp8266.tags
+"set tags+=~/.vim/stm32f103.tags
+"#set tags+=~/.vim/stm32f407.tags
+set tags+=.tags
+map :ct :!ctags -f .tags -R
 
 if &term=="xterm"
 set t_Co=8
@@ -87,7 +91,7 @@ map <F10> za
 set pastetoggle=<F9>
 "map <F7> :make<CR>
 "显示与关闭行号
-"map <F5> :set nu!<CR>
+map <F5> :set nu!<CR>
 "新建空文件映射
 "nmap <C-n> :tabnew<CR>
 "插入文件头信息
