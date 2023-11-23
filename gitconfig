@@ -1,0 +1,6 @@
+[core]
+	autocrlf = false #input
+	editor = vim
+	whitespace = cr-at-eol
+[init]
+	defaultBranch = main
